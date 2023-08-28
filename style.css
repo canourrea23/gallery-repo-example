@@ -1,0 +1,32 @@
+* {
+  outline: 1px red solid;
+}
+
+.carousel-container {
+  /* width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden; */
+  position: relative;
+    width: 25%; /* whatever width you want. I was implementing this in a 4 tile grid pattern. I used javascript to set height equal to width */
+    border: 2px solid #fff; /* just to separate the images */
+    overflow: hidden; /* "crop" the image */
+    background: #000; /* incase the image is wider than tall/taller than wide */
+}
+.carousel {
+  display: flex;
+}
+.carousel-item {
+  flex: 0 0 100%;
+}
+img {
+  /* width: 100%; */
+  /* height: 400px;
+  object-fit: cover;
+  object-position: -20% 0; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 10%;
+}
